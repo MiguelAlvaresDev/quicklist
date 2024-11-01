@@ -1,0 +1,66 @@
+:root {
+  --bg-primary: #f4f5fb;
+  --bg-secondary: #ffffff;
+
+  --brand: #ca3884;
+  --brand-hover: #a52c6b;
+  --danger: #c93847;
+
+  --content-primary: #080b12;
+  --content-secondary: #374151;
+  --content-tertiary: #9ca3af;
+
+  --border-primary: #d1d5db;
+  --border-hover: #b9c2d0;
+
+  --ff: "Inter", serif;
+}
+
+body {
+  background-color: var(--bg-primary);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 80rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  margin-inline: auto;
+
+  font: 700 1.5rem/125% var(--ff);
+  color: var(--content-secondary);
+
+  img {
+    width: 3rem;
+  }
+}
+
+main {
+  max-width: 80rem;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  margin-inline: auto;
+
+  div:nth-child(1) {
+    a {
+      display: flex;
+      gap: 0.2rem;
+
+      color: var(--brand);
+      font: 500 1rem/100% var(--ff);
+      text-decoration: none;
+
+      img {
+        width: 1rem;
+      }
+    }
+
+    h2 {
+      font: 700 2.5rem/125% var(--ff);
+      color: var(--content-primary);
+    }
+  }
+}
