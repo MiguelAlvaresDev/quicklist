@@ -28,9 +28,64 @@
       </div>
 
       <form>
-        <input type="text" placeholder="Adicione um novo item" id="add-item" />
-        <button type="submit" id="btn" class="button">Adicionar item</button>
+        <div class="add-itens">
+          <input
+            type="text"
+            placeholder="Adicione um novo item"
+            id="add-list"
+          />
+          <button type="submit" id="btn" class="button">Adicionar item</button>
+        </div>
+
+        <div class="list">
+          <ul>
+            <li>
+              <div>
+                <input type="checkbox" name="check" id="check" />
+                <span class="checkmark"></span>
+                <span>Pão de forma</span>
+              </div>
+              <a href="#"> <img src="assets/Frame.svg" alt="" /> </a>
+            </li>
+
+            <li>
+              <div>
+                <input type="checkbox" name="check" id="check" />
+                <span class="checkmark"></span>
+                <span>Café</span>
+              </div>
+              <a href="#"> <img src="assets/Frame.svg" alt="" /> </a>
+            </li>
+
+            <li>
+              <div>
+                <input type="checkbox" name="check" id="check" />
+                <span class="checkmark"></span>
+                <span>Suco de laranja</span>
+              </div>
+              <a href="#"> <img src="assets/Frame.svg" alt="" /> </a>
+            </li>
+
+            <li>
+              <div>
+                <input type="checkbox" name="check" id="check" />
+                <span class="checkmark"></span>
+                <span>Bolacha</span>
+              </div>
+              <a href="#"> <img src="assets/Frame.svg" alt="" /> </a>
+            </li>
+          </ul>
+        </div>
       </form>
+
+      <div class="iten-removed display-none">
+        <div>
+          <span>O item foi removido da lista</span>
+        </div>
+        <a href="#">
+          <img src="assets/delete-round-svgrepo-com.svg" alt="" />
+        </a>
+      </div>
     </main>
   </body>
 </html>
