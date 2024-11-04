@@ -32,60 +32,70 @@
           <input
             type="text"
             placeholder="Adicione um novo item"
-            id="add-list"
+            id="itemInput"
           />
-          <button type="submit" id="btn" class="button">Adicionar item</button>
+          <button
+            type="submit"
+            id="btn"
+            class="button"
+            onclick="adicionarItem()"
+          >
+            Adicionar item
+          </button>
         </div>
 
-        <div class="list">
+        <div id="lista">
           <ul>
-            <li>
+            <li class="item">
               <div>
                 <input type="checkbox" name="check" id="check" />
-                <span class="checkmark"></span>
                 <span>Pão de forma</span>
               </div>
-              <a href="#"> <img src="assets/Frame.svg" alt="" /> </a>
+              <a href="#" class="deleteLink" onclick="removerItem(this)">
+                <img src="assets/Frame.svg" alt="" />
+              </a>
             </li>
 
-            <li>
+            <li class="item">
               <div>
                 <input type="checkbox" name="check" id="check" />
-                <span class="checkmark"></span>
                 <span>Café</span>
               </div>
-              <a href="#"> <img src="assets/Frame.svg" alt="" /> </a>
+              <a href="#" class="deleteLink" onclick="removerItem(this)">
+                <img src="assets/Frame.svg" alt="" />
+              </a>
             </li>
 
-            <li>
+            <li class="item">
               <div>
                 <input type="checkbox" name="check" id="check" />
-                <span class="checkmark"></span>
                 <span>Suco de laranja</span>
               </div>
-              <a href="#"> <img src="assets/Frame.svg" alt="" /> </a>
+              <a href="#" class="deleteLink" onclick="removerItem(this)">
+                <img src="assets/Frame.svg" alt="" />
+              </a>
             </li>
 
-            <li>
+            <li class="item">
               <div>
                 <input type="checkbox" name="check" id="check" />
-                <span class="checkmark"></span>
                 <span>Bolacha</span>
               </div>
-              <a href="#"> <img src="assets/Frame.svg" alt="" /> </a>
+              <a href="#" class="deleteLink" onclick="removerItem(this)">
+                <img src="assets/Frame.svg" alt="" />
+              </a>
             </li>
           </ul>
         </div>
       </form>
 
-      <div class="iten-removed display-none">
-        <div>
-          <span>O item foi removido da lista</span>
-        </div>
-        <a href="#">
-          <img src="assets/delete-round-svgrepo-com.svg" alt="" />
-        </a>
+      <div class="item-removed">
+        <span>O item foi removido da lista</span>
+        <a href="#" class="close" onclick="fecharMensagem()"
+          ><img src="assets/delete-round-svgrepo-com.svg" alt=""
+        /></a>
       </div>
     </main>
   </body>
+  <script src="script.js"></script>
 </html>

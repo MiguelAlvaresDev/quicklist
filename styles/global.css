@@ -128,28 +128,41 @@ ul {
   }
 }
 
-.iten-removed {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  margin-top: 4rem;
-  gap: 1rem;
-
-  flex: 1;
-  border-radius: 15px;
-  padding: 0.8rem;
-
+.item-removed {
+  display: none;
   background-color: var(--danger);
+  padding: 10px;
+  border-radius: 15px;
   color: var(--bg-secondary);
-  font: 600 1.3rem/120% var(--ff);
-
-  img {
-    margin-top: 7px;
-    width: 1.5rem;
-  }
+  font: 600 1.3rem/125% var(--ff);
+  position: relative;
+  margin-top: 4rem;
 }
 
-.display-none {
-  display: none;
+.item-removed.show {
+  display: block;
+}
+
+.item-removed .close {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 478px) {
+  main {
+    overflow-x: hidden;
+  }
+  .add-itens {
+    gap: 10px;
+
+    input {
+      padding: 0 0.3rem;
+    }
+
+    .button {
+      padding: 0 0.5rem;
+    }
+  }
 }
